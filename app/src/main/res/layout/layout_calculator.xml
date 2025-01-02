@@ -2,12 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:text="0"
+        tools:text="@string/_0"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="50sp"
@@ -39,45 +40,49 @@
         android:id="@+id/btn_7"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="7"
+        android:text="@string/_7"
         android:layout_weight="1"
         android:layout_marginHorizontal="4dp"
         style="@style/textStyle"
+        android:onClick="onNumberClick"
         />
     <Button
         android:id="@+id/btn_8"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="8"
+        android:text="@string/_8"
         app:layout_constraintTop_toBottomOf="@id/tv_title"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_weight="1"
         android:layout_marginHorizontal="4dp"
         style="@style/textStyle"
+        android:onClick="onNumberClick"
 
         />
     <Button
         android:id="@+id/btn_9"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="9"
+        android:text="@string/_9"
         app:layout_constraintTop_toBottomOf="@id/tv_title"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_weight="1"
         android:layout_marginHorizontal="4dp"
         style="@style/textStyle"
+        android:onClick="onNumberClick"
 
         />
         <Button
             android:id="@+id/multiply"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="*"
+            android:text="@string/multiply"
             app:layout_constraintTop_toBottomOf="@id/tv_title"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
+            android:onClick="onOperatorClick"
 
             />
     </LinearLayout>
@@ -94,21 +99,22 @@
             android:id="@+id/btn_4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="4"
+            android:text="@string/_4"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
-
+            android:onClick="onNumberClick"
 
             />
         <Button
             android:id="@+id/btn_5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="5"
+            android:text="@string/_5"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
+            android:onClick="onNumberClick"
 
 
             />
@@ -116,20 +122,22 @@
             android:id="@+id/btn_6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="6"
+            android:text="@string/_6"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
+            android:onClick="onNumberClick"
 
             />
         <Button
             android:id="@+id/minus"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="-"
+            android:text="@string/minus"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
+            android:onClick="onOperatorClick"
 
             />
     </LinearLayout>
@@ -149,20 +157,22 @@
             android:id="@+id/btn_1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="1"
+            android:text="@string/_1"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
+            android:onClick="onNumberClick"
 
             />
         <Button
             android:id="@+id/btn_2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="2"
+            android:text="@string/_2"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
+            android:onClick="onNumberClick"
 
 
             />
@@ -170,20 +180,22 @@
             android:id="@+id/btn_3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="3"
+            android:text="@string/_3"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
+            android:onClick="onNumberClick"
 
             />
         <Button
             android:id="@+id/plus"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="+"
+            android:text="@string/plus"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
+            android:onClick="onOperatorClick"
 
             />
     </LinearLayout>
@@ -203,50 +215,54 @@
             android:id="@+id/btn_komma"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="."
+            android:text="@string/komma"
             app:layout_constraintTop_toBottomOf="@id/tv_title"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
+            android:onClick="onNumberClick"
 
             />
         <Button
             android:id="@+id/btn_0"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="0"
+            android:text="@string/_0"
             app:layout_constraintTop_toBottomOf="@id/tv_title"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
-
-            />
-        <Button
-            android:id="@+id/btn_divide"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="/"
-            app:layout_constraintTop_toBottomOf="@id/tv_title"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="4dp"
-            style="@style/textStyle"
+            android:onClick="onNumberClick"
 
             />
         <Button
             android:id="@+id/equal"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="="
+            android:text="@string/equal"
             app:layout_constraintTop_toBottomOf="@id/tv_title"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_weight="1"
             android:layout_marginHorizontal="4dp"
             style="@style/textStyle"
+            android:onClick="onEqualClick"
 
             />
+        <Button
+            android:id="@+id/btn_divide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/division"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            style="@style/textStyle"
+            android:onClick="onOperatorClick"
+            />
+
     </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
